@@ -1,43 +1,64 @@
-# Maze Solver
+# AI-Project2025
 
-Simple maze solver project containing a solver script and a text-format maze input.
+Short README for this workspace.
 
-## Files
-- `maze_solver.py` — main Python script that solves a maze.
-- `maze.txt` — example maze input (text grid).
+## Project Overview
+
+This repository contains small demo projects related to AI and utilities used during development. Primary files in the workspace:
+
+- `maze_solver.py` — Maze solving script (reads `maze.txt`).
+- `maze.txt` — Example maze input used by the solver.
+- `EELU_ML.ipynb` — Jupyter notebook with data analysis and ML experiments (references `education_career_success.csv`).
 
 ## Requirements
+
 - Python 3.8 or newer
+- Common Python packages used by the notebook and scripts:
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+
+Install with:
+
+```
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+Or create a `requirements.txt` with the above packages and run:
+
+```
+pip install -r requirements.txt
+```
 
 ## Usage
-Run the solver from the command line. Examples:
 
-```
-python maze_solver.py maze.txt
-```
+1. Maze solver
 
-or, if the script reads a default file:
+   - Ensure `maze.txt` is present in the same folder as `maze_solver.py`.
+   - Run the solver:
 
-```
-python maze_solver.py
-```
+   ```
+   python maze_solver.py
+   ```
 
-## Input format
-The maze is provided as a plain text grid (each line is a row). Common conventions:
+   (If `maze_solver.py` accepts command-line arguments, pass the path to the maze file accordingly.)
 
-- `#` — wall
-- space (` `) — open path
-- `S` — start (optional)
-- `E` — end (optional)
+2. Jupyter Notebook
 
-If `S`/`E` are not present, the script may assume a default start/end (check `maze_solver.py`).
+   - Open the notebook with:
 
-## Output
-The solver typically prints the solved maze or the path found to the console. Check `maze_solver.py` for exact behavior.
+   ```
+   jupyter notebook EELU_ML.ipynb
+   ```
+
+   - The notebook expects `education_career_success.csv` in the same directory for full reproducibility.
 
 ## Notes
-- Update the input-format section above if your implementation uses different characters.
-- If your script requires extra dependencies, add them to a `requirements.txt` file.
+
+- This README is intentionally minimal. Update it with more details about `maze_solver.py` (usage flags, input format) and dataset provenance for the notebook if desired.
 
 ## License
-This repository is provided without an explicit license. Add a license file if you want to set one.
+
+MIT License — feel free to modify and reuse.
